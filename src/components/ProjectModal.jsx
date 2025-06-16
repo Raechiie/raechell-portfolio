@@ -66,8 +66,6 @@ export const ProjectModal = ({
           </div>
         )}
 
-        <div className="h-px bg-blue-500/20 my-8" />
-
         {/* Video Demo */}
         {videoSrc && (
           <div className="mb-8">

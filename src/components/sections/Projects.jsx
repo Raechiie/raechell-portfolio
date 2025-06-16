@@ -1,5 +1,72 @@
 import { useState } from "react";
 import { ProjectModal } from "../ProjectModal";
+import splashApp from "../../assets/MyProjects/Loceats-App/Splash.jpg";
+import loginApp from "../../assets/MyProjects/Loceats-App/Login.jpg";
+import homeApp from "../../assets/MyProjects/Loceats-App/Home.jpg";
+import searchApp from "../../assets/MyProjects/Loceats-App/Search.jpg";
+import restaurantApp from "../../assets/MyProjects/Loceats-App/Restaurant.jpg";
+import filterApp from "../../assets/MyProjects/Loceats-App/Filter.jpg";
+import mapApp from "../../assets/MyProjects/Loceats-App/Map.png";
+import profileApp from "../../assets/MyProjects/Loceats-App/Profile.jpg";
+import QRApp from "../../assets/MyProjects/Loceats-App/QR.jpg";
+
+//ADMIN
+import admin1 from "../../assets/MyProjects/Loceats-Admin/Dashboard.png";
+import admin2 from "../../assets/MyProjects/Loceats-Admin/Restaurant.png";
+import admin3 from "../../assets/MyProjects/Loceats-Admin/AddRestaurant.png";
+import admin4 from "../../assets/MyProjects/Loceats-Admin/Review.png";
+import admin5 from "../../assets/MyProjects/Loceats-Admin/Report.png";
+import admin6 from "../../assets/MyProjects/Loceats-Admin/User.png";
+import admin7 from "../../assets/MyProjects/Loceats-Admin/AddUser.png";
+import admin8 from "../../assets/MyProjects/Loceats-Admin/SuperAdmin.png";
+
+//BUSINESS OWNER;
+import bo1 from "../../assets/MyProjects/Loceats-Business/Login.png";
+import bo2 from "../../assets/MyProjects/Loceats-Business/Home.png";
+import bo3 from "../../assets/MyProjects/Loceats-Business/Review.png";
+import bo4 from "../../assets/MyProjects/Loceats-Business/Profile.png";
+
+//MARVEL
+import marvel1 from "../../assets/MyProjects/WebDev/Home.JPG";
+import marvel2 from "../../assets/MyProjects/WebDev/Home2.JPG";
+import marvel3 from "../../assets/MyProjects/WebDev/Characters.JPG";
+import marvel4 from "../../assets/MyProjects/WebDev/Characters2.JPG";
+import marvel5 from "../../assets/MyProjects/WebDev/Characters3.JPG";
+import marvel6 from "../../assets/MyProjects/WebDev/Movies.JPG";
+import marvel7 from "../../assets/MyProjects/WebDev/Movies2.JPG";
+import marvel8 from "../../assets/MyProjects/WebDev/Series.JPG";
+import marvel9 from "../../assets/MyProjects/WebDev/About.JPG";
+import marvelVid from "../../assets/MyProjects/WebDev/Marvels-Video.mp4";
+
+//MYSTORIA
+import mystoria1 from "../../assets/MyProjects/Mystoria/Landing.jpg";
+import mystoria2 from "../../assets/MyProjects/Mystoria/ChooseChar.jpg";
+import mystoria3 from "../../assets/MyProjects/Mystoria/Scene1.jpg";
+import mystoria4 from "../../assets/MyProjects/Mystoria/Scene2.jpg";
+import mystoriaVid from "../../assets/MyProjects/Mystoria/MystoriaDemo.mp4";
+
+//GRAB N COOK
+import grab1 from "../../assets/MyProjects/GrabNCook/Landing.jpg";
+import grab2 from "../../assets/MyProjects/GrabNCook/Choice.jpg";
+import grab3 from "../../assets/MyProjects/GrabNCook/Shop.jpg";
+import grab4 from "../../assets/MyProjects/GrabNCook/Wheel.jpg";
+import grabVid from "../../assets/MyProjects/GrabNCook/GrabNCook-Demo.mp4";
+
+//HOUSEHOLD HAVOC
+import house1 from "../../assets/MyProjects/HouseholdHavoc/Landing.JPG";
+import house2 from "../../assets/MyProjects/HouseholdHavoc/PlayerName.JPG";
+import house3 from "../../assets/MyProjects/HouseholdHavoc/Background.JPG";
+import house4 from "../../assets/MyProjects/HouseholdHavoc/Weapon.JPG";
+import house5 from "../../assets/MyProjects/HouseholdHavoc/Fight.JPG";
+import house6 from "../../assets/MyProjects/HouseholdHavoc/Win.JPG";
+import houseVid from "../../assets/MyProjects/HouseholdHavoc/HouseholdDemo.mp4";
+
+//COFFEE SHOP
+import coffee1 from "../../assets/MyProjects/ReportModule/Sales.JPG";
+import coffee2 from "../../assets/MyProjects/ReportModule/Inventory.JPG";
+import coffee3 from "../../assets/MyProjects/ReportModule/Rider.JPG";
+import coffee4 from "../../assets/MyProjects/ReportModule/Legend.JPG";
+import coffee5 from "../../assets/MyProjects/ReportModule/Export.JPG";
 
 const projects = [
   {
@@ -10,37 +77,19 @@ const projects = [
     {
       title: "For App Users",
       images: [
-        "/MyProjects/Loceats-App/Splash.jpg",
-        "/MyProjects/Loceats-App/Login.jpg",
-        "/MyProjects/Loceats-App/Home.jpg",
-        "/MyProjects/Loceats-App/Search.jpg",
-        "/MyProjects/Loceats-App/Restaurant.jpg",
-        "/MyProjects/Loceats-App/Filter.jpg",
-        "/MyProjects/Loceats-App/Map.png",
-        "/MyProjects/Loceats-App/Profile.jpg",
-        "/MyProjects/Loceats-App/QR.jpg"
+        splashApp, loginApp, homeApp, searchApp, restaurantApp, filterApp, mapApp, profileApp, QRApp
         ]
     },
     {
       title: "For Admin",
       images: [
-        "/MyProjects/Loceats-Admin/Dashboard.png",
-        "/MyProjects/Loceats-Admin/Restaurant.png",
-        "/MyProjects/Loceats-Admin/AddRestaurant.png",
-        "/MyProjects/Loceats-Admin/Review.png",
-        "/MyProjects/Loceats-Admin/Report.png",
-        "/MyProjects/Loceats-Admin/User.png",
-        "/MyProjects/Loceats-Admin/AddUser.png",
-        "/MyProjects/Loceats-Admin/SuperAdmin.png"
+        admin1, admin2, admin3, admin4, admin5, admin6, admin7, admin8
       ]
     },
     {
       title: "For Business Owners",
       images: [
-        "/MyProjects/Loceats-Business/Login.png",
-        "/MyProjects/Loceats-Business/Home.png",
-        "/MyProjects/Loceats-Business/Review.png",
-        "/MyProjects/Loceats-Business/Profile.png"
+        bo1, bo2, bo3, bo4
       ]
     }
   ]
@@ -49,55 +98,36 @@ const projects = [
     title: "Marvel Fan Website",
     description: "Created a Marvel-themed website as part of a development project, featuring a catalog of Marvel movies, series, and characters. The site displays detailed information for each title and hero, offering an engaging and organized fan experience using clean UI and responsive design.",
     tech: ["HTML", "CSS"],
-    videoSrc: "/MyProjects/WebDev/Marvels-Video.mp4",
+    videoSrc: marvelVid,
     images: [
-        "/MyProjects/WebDev/Home.JPG",
-        "/MyProjects/WebDev/Home2.JPG",
-        "/MyProjects/WebDev/Characters.JPG",
-        "/MyProjects/WebDev/Characters2.JPG",
-        "/MyProjects/WebDev/Characters3.JPG",
-        "/MyProjects/WebDev/Movies.JPG",
-        "/MyProjects/WebDev/Movies2.JPG",
-        "/MyProjects/WebDev/Series.JPG",
-        "/MyProjects/WebDev/About.JPG"
+      marvel1, marvel2, marvel3, marvel4, marvel5, marvel6, marvel7, marvel8, marvel9
     ]
   },
 {
     title: "Mystoria",
     description: "A choice-based visual novel game set in a mystery-filled fantasy world of Mystoria. Players uncover secrets, interact with unique characters, and make decisions that lead to multiple story routes and endings. With its engaging narrative and replayable structure, Mystoria offers a rich and immersive storytelling experience where every choice matters.",
     tech: ["C#", "Unity"],
-    videoSrc: "/MyProjects/Mystoria/MystoriaDemo.mp4",
+    videoSrc: mystoriaVid,
     images: [
-        "/MyProjects/Mystoria/Landing.jpg",
-        "/MyProjects/Mystoria/ChooseChar.jpg",
-        "/MyProjects/Mystoria/Scene1.jpg",
-        "/MyProjects/Mystoria/Scene2.jpg"
+      mystoria1, mystoria2, mystoria3, mystoria4
     ]
   },  
   {
     title: "Grab 'n Cook",
     description: "   A companion app for the tabletop game of the same name. It allows players to purchase in-game items and spin a roulette to receive random cooking skills they can use during gameplay, enhancing strategy and fun.",
     tech: ["C#", "Unity"],
-    videoSrc: "/MyProjects/GrabNCook/GrabNCook-Demo.mp4",
+    videoSrc: grabVid,
     images: [
-        "/MyProjects/GrabNCook/Landing.jpg",
-        "/MyProjects/GrabNCook/Choice.jpg",
-        "/MyProjects/GrabNCook/Shop.jpg",
-        "/MyProjects/GrabNCook/Wheel.jpg"
+        grab1, grab2, grab3, grab4
     ]
   },  
   {
     title: "Household Havoc",
     description: " A turn-based combat game inspired by classic fighters like Tekken, but with a quirky twist — players battle using everyday household items as weapons. From slippers to tambo, luck and strategy are the key in this chaotic, fun-filled brawler.",
     tech: ["C#", "Unity"],
-    videoSrc: "/MyProjects/HouseholdHavoc/HouseholdDemo.mp4",
+    videoSrc: houseVid,
     images: [
-        "/MyProjects/HouseholdHavoc/Landing.JPG",
-        "/MyProjects/HouseholdHavoc/PlayerName.JPG",
-        "/MyProjects/HouseholdHavoc/Background.JPG",
-        "/MyProjects/HouseholdHavoc/Weapon.JPG",
-        "/MyProjects/HouseholdHavoc/Fight.JPG",
-        "/MyProjects/HouseholdHavoc/Win.JPG"
+        house1, house2, house3, house4, house5, house6, 
     ]
   },
     {
@@ -105,11 +135,7 @@ const projects = [
     description: " Designed a clean and intuitive report module UI for a coffee shop website, enabling efficient generation and viewing of key business reports.",
     tech: ["Figma"],
     images: [
-        "/MyProjects/ReportModule/Sales.JPG",
-        "/MyProjects/ReportModule/Inventory.JPG",
-        "/MyProjects/ReportModule/Rider.JPG",
-        "/MyProjects/ReportModule/Legend.JPG",
-        "/MyProjects/ReportModule/Export.JPG"
+        coffee1, coffee2, coffee3, coffee4, coffee5
     ]
   },
 ];
