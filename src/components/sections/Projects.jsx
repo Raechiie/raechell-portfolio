@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { ProjectModal } from "../ProjectModal";
 
-
 const projects = [
   {
     title: "Loc-Eats",
@@ -11,37 +10,37 @@ const projects = [
     {
       title: "For App Users",
       images: [
-        "/public/MyProjects/Loceats-App/Splash.jpg",
-        "/public/MyProjects/Loceats-App/Login.jpg",
-        "/public/MyProjects/Loceats-App/Home.jpg",
-        "/public/MyProjects/Loceats-App/Search.jpg",
-        "/public/MyProjects/Loceats-App/Restaurant.jpg",
-        "/public/MyProjects/Loceats-App/Filter.jpg",
-        "/public/MyProjects/Loceats-App/Map.png",
-        "/public/MyProjects/Loceats-App/Profile.jpg",
-        "/public/MyProjects/Loceats-App/QR.jpg"
+        "/MyProjects/Loceats-App/Splash.jpg",
+        "/MyProjects/Loceats-App/Login.jpg",
+        "/MyProjects/Loceats-App/Home.jpg",
+        "/MyProjects/Loceats-App/Search.jpg",
+        "/MyProjects/Loceats-App/Restaurant.jpg",
+        "/MyProjects/Loceats-App/Filter.jpg",
+        "/MyProjects/Loceats-App/Map.png",
+        "/MyProjects/Loceats-App/Profile.jpg",
+        "/MyProjects/Loceats-App/QR.jpg"
         ]
     },
     {
       title: "For Admin",
       images: [
-        "/public/MyProjects/Loceats-Admin/Dashboard.png",
-        "/public/MyProjects/Loceats-Admin/Restaurant.png",
-        "/public/MyProjects/Loceats-Admin/AddRestaurant.png",
-        "/public/MyProjects/Loceats-Admin/Review.png",
-        "/public/MyProjects/Loceats-Admin/Report.png",
-        "/public/MyProjects/Loceats-Admin/User.png",
-        "/public/MyProjects/Loceats-Admin/AddUser.png",
-        "/public/MyProjects/Loceats-Admin/SuperAdmin.png"
+        "/MyProjects/Loceats-Admin/Dashboard.png",
+        "/MyProjects/Loceats-Admin/Restaurant.png",
+        "/MyProjects/Loceats-Admin/AddRestaurant.png",
+        "/MyProjects/Loceats-Admin/Review.png",
+        "/MyProjects/Loceats-Admin/Report.png",
+        "/MyProjects/Loceats-Admin/User.png",
+        "/MyProjects/Loceats-Admin/AddUser.png",
+        "/MyProjects/Loceats-Admin/SuperAdmin.png"
       ]
     },
     {
       title: "For Business Owners",
       images: [
-        "/public/MyProjects/Loceats-Business/Login.png",
-        "/public/MyProjects/Loceats-Business/Home.png",
-        "/public/MyProjects/Loceats-Business/Review.png",
-        "/public/MyProjects/Loceats-Business/Profile.png"
+        "/MyProjects/Loceats-Business/Login.png",
+        "/MyProjects/Loceats-Business/Home.png",
+        "/MyProjects/Loceats-Business/Review.png",
+        "/MyProjects/Loceats-Business/Profile.png"
       ]
     }
   ]
@@ -50,55 +49,55 @@ const projects = [
     title: "Marvel Fan Website",
     description: "Created a Marvel-themed website as part of a development project, featuring a catalog of Marvel movies, series, and characters. The site displays detailed information for each title and hero, offering an engaging and organized fan experience using clean UI and responsive design.",
     tech: ["HTML", "CSS"],
-    videoSrc: "/public/MyProjects/WebDev/Marvels-Video.mp4",
+    videoSrc: "/MyProjects/WebDev/Marvels-Video.mp4",
     images: [
-        "/public/MyProjects/WebDev/Home.JPG",
-        "/public/MyProjects/WebDev/Home2.JPG",
-        "/public/MyProjects/WebDev/Characters.JPG",
-        "/public/MyProjects/WebDev/Characters2.JPG",
-        "/public/MyProjects/WebDev/Characters3.JPG",
-        "/public/MyProjects/WebDev/Movies.JPG",
-        "/public/MyProjects/WebDev/Movies2.JPG",
-        "/public/MyProjects/WebDev/Series.JPG",
-        "/public/MyProjects/WebDev/About.JPG"
+        "/MyProjects/WebDev/Home.JPG",
+        "/MyProjects/WebDev/Home2.JPG",
+        "/MyProjects/WebDev/Characters.JPG",
+        "/MyProjects/WebDev/Characters2.JPG",
+        "/MyProjects/WebDev/Characters3.JPG",
+        "/MyProjects/WebDev/Movies.JPG",
+        "/MyProjects/WebDev/Movies2.JPG",
+        "/MyProjects/WebDev/Series.JPG",
+        "/MyProjects/WebDev/About.JPG"
     ]
   },
 {
     title: "Mystoria",
     description: "A choice-based visual novel game set in a mystery-filled fantasy world of Mystoria. Players uncover secrets, interact with unique characters, and make decisions that lead to multiple story routes and endings. With its engaging narrative and replayable structure, Mystoria offers a rich and immersive storytelling experience where every choice matters.",
     tech: ["C#", "Unity"],
-    videoSrc: "/public/MyProjects/Mystoria/MystoriaDemo.mp4",
+    videoSrc: "/MyProjects/Mystoria/MystoriaDemo.mp4",
     images: [
-        "/public/MyProjects/Mystoria/Landing.jpg",
-        "/public/MyProjects/Mystoria/ChooseChar.jpg",
-        "/public/MyProjects/Mystoria/Scene1.jpg",
-        "/public/MyProjects/Mystoria/Scene2.jpg"
+        "/MyProjects/Mystoria/Landing.jpg",
+        "/MyProjects/Mystoria/ChooseChar.jpg",
+        "/MyProjects/Mystoria/Scene1.jpg",
+        "/MyProjects/Mystoria/Scene2.jpg"
     ]
   },  
   {
     title: "Grab 'n Cook",
     description: "   A companion app for the tabletop game of the same name. It allows players to purchase in-game items and spin a roulette to receive random cooking skills they can use during gameplay, enhancing strategy and fun.",
     tech: ["C#", "Unity"],
-    videoSrc: "/public/MyProjects/GrabNCook/GrabNCook-Demo.mp4",
+    videoSrc: "/MyProjects/GrabNCook/GrabNCook-Demo.mp4",
     images: [
-        "/public/MyProjects/GrabNCook/Landing.jpg",
-        "/public/MyProjects/GrabNCook/Choice.jpg",
-        "/public/MyProjects/GrabNCook/Shop.jpg",
-        "/public/MyProjects/GrabNCook/Wheel.jpg"
+        "/MyProjects/GrabNCook/Landing.jpg",
+        "/MyProjects/GrabNCook/Choice.jpg",
+        "/MyProjects/GrabNCook/Shop.jpg",
+        "/MyProjects/GrabNCook/Wheel.jpg"
     ]
   },  
   {
     title: "Household Havoc",
     description: " A turn-based combat game inspired by classic fighters like Tekken, but with a quirky twist — players battle using everyday household items as weapons. From slippers to tambo, luck and strategy are the key in this chaotic, fun-filled brawler.",
     tech: ["C#", "Unity"],
-    videoSrc: "/public/MyProjects/HouseholdHavoc/HouseholdDemo.mp4",
+    videoSrc: "/MyProjects/HouseholdHavoc/HouseholdDemo.mp4",
     images: [
-        "/public/MyProjects/HouseholdHavoc/Landing.JPG",
-        "/public/MyProjects/HouseholdHavoc/PlayerName.JPG",
-        "/public/MyProjects/HouseholdHavoc/Background.JPG",
-        "/public/MyProjects/HouseholdHavoc/Weapon.JPG",
-        "/public/MyProjects/HouseholdHavoc/Fight.JPG",
-        "/public/MyProjects/HouseholdHavoc/Win.JPG"
+        "/MyProjects/HouseholdHavoc/Landing.JPG",
+        "/MyProjects/HouseholdHavoc/PlayerName.JPG",
+        "/MyProjects/HouseholdHavoc/Background.JPG",
+        "/MyProjects/HouseholdHavoc/Weapon.JPG",
+        "/MyProjects/HouseholdHavoc/Fight.JPG",
+        "/MyProjects/HouseholdHavoc/Win.JPG"
     ]
   },
     {
@@ -106,11 +105,11 @@ const projects = [
     description: " Designed a clean and intuitive report module UI for a coffee shop website, enabling efficient generation and viewing of key business reports.",
     tech: ["Figma"],
     images: [
-        "/public/MyProjects/ReportModule/Sales.JPG",
-        "/public/MyProjects/ReportModule/Inventory.JPG",
-        "/public/MyProjects/ReportModule/Rider.JPG",
-        "/public/MyProjects/ReportModule/Legend.JPG",
-        "/public/MyProjects/ReportModule/Export.JPG"
+        "/MyProjects/ReportModule/Sales.JPG",
+        "/MyProjects/ReportModule/Inventory.JPG",
+        "/MyProjects/ReportModule/Rider.JPG",
+        "/MyProjects/ReportModule/Legend.JPG",
+        "/MyProjects/ReportModule/Export.JPG"
     ]
   },
 ];
